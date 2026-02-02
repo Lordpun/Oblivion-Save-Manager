@@ -1,0 +1,4 @@
+#Compilier stuff
+OSM
+*.o
+GUI/*.o
