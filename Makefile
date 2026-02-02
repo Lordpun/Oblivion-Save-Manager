@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -Wall -std=c++17 -I. -I./GUI `pkg-config --cflags gtkmm-4.0`
 LDLIBS = `pkg-config --libs gtkmm-4.0`
 
-TARGET = OSM
+TARGET = osm
 
 SRCS = main.cpp GUI/GUIinit.cpp
 OBJS = $(SRCS:.cpp=.o)
