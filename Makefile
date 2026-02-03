@@ -1,10 +1,10 @@
 CXX = g++
-CXXFLAGS = -Wall -std=c++17 -I. -I./GUI `pkg-config --cflags gtkmm-4.0`
+CXXFLAGS = -Wall -std=c++17 -I. -I./GUI -I./backend `pkg-config --cflags gtkmm-4.0`
 LDLIBS = `pkg-config --libs gtkmm-4.0`
 
 TARGET = osm
 
-SRCS = main.cpp GUI/GUIinit.cpp
+SRCS = main.cpp GUI/GUIinit.cpp backend/config.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 $(TARGET): $(OBJS)

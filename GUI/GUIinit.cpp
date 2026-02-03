@@ -1,6 +1,5 @@
 #include "GUIinit.h"
 #include <iostream>
-#include <string>
 
 // Styling
 const std::string titleStyle = ".titleStyle { padding: 10px 5px; border-bottom: 1px solid #ccc; font-size: 24px; }";
