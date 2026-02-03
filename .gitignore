@@ -1,4 +1,4 @@
 #Compilier stuff
-OSM
+osm
 *.o
 GUI/*.o
