@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main(int argc, char* argv[]) {
-	setupConfig();
+	makeConfig();
 	
 	return setup(argc, argv);
 }

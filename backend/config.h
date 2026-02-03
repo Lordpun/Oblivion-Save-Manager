@@ -1,7 +1,9 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-int setupConfig();
+#include <string>
+
+int makeConfig();
 
 std::string getPath();
 
