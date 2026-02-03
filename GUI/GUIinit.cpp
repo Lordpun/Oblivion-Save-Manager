@@ -1,4 +1,5 @@
 #include "GUIinit.h"
+#include "backend/config.h"
 #include <iostream>
 
 // Styling
@@ -18,6 +19,8 @@ Window::Window() : mainBox(Gtk::Orientation::VERTICAL, 10) {
 	mainBox.append(title);
 
 	set_child(mainBox);
+
+	makeConfig(*this);
 }
 
 int setup(int argc, char *argv[]) {

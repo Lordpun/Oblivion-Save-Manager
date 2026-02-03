@@ -2,8 +2,9 @@
 #define CONFIG_H
 
 #include <string>
+#include <gtkmm.h>
 
-int makeConfig();
+int makeConfig(Gtk::Window& parent);
 
 std::string getPath();
 
