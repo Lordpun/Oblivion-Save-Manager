@@ -6,13 +6,15 @@
 
 namespace fs = std::filesystem;
 
-// Linux only for now
+// Gets the file path for configs
+// Currently only supports Linux
 std::string getConfigPath() {
 	const char* xdg = std::getenv("XDG_CONFIG_HOME");
   if (xdg) return std::string(xdg) + "/OSM/";
   return std::string(std::getenv("HOME")) + "/.config/OSM/";
 }
 
+// Sets up the config file
 int setupConfig(std::string configPath) {
 	CSimpleIniA ini;
 
@@ -32,6 +34,7 @@ int setupConfig(std::string configPath) {
 	return 0;
 }
 
+// Makes the config file
 int makeConfig() {
 	std::string filePath = getConfigPath();
 
@@ -49,6 +52,7 @@ int makeConfig() {
 	return 0;
 }
 
+// Gets the path from the config
 std::string getPath(std::string name) {
 	std::string configPath = getConfigPath() + "/config.ini";
 
