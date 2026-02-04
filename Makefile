@@ -4,7 +4,7 @@ LDLIBS = `pkg-config --libs gtkmm-4.0`
 
 TARGET = osm
 
-SRCS = main.cpp GUI/GUIinit.cpp backend/config.cpp backend/findPaths.cpp
+SRCS = main.cpp GUI/GUIinit.cpp backend/config.cpp backend/findPaths.cpp backend/getSaves.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 $(TARGET): $(OBJS)
