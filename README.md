@@ -1,5 +1,5 @@
 # Oblivion Save Manager
-### (OSM)
+### (OSM for short)
 
 This is a tool for managing character saves in original The Elder Scrolls IV: Oblivion.
 
@@ -12,8 +12,10 @@ Also currently planned as Linux only as I develop this
 (If you wish to fix it, I belive the only issue is just simply the config file path)
 
 ## Features
+### In development as mentioned, so none of these are here currently.
 * Sorts your saves into folders by character (Not implemented yet)
 * Allows you to add or remove characters (Not implemented yet)
+* Gives a summary of your character and their most recent save (Not implemented yet)
 
 ## Dependencies
 * TES IV: Oblivion (For fairly obvious reasons)
