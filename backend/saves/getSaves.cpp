@@ -1,6 +1,6 @@
 #include "getSaves.h"
-#include "config.h"
-#include "SimpleIni.h"
+#include "../config/config.h"
+#include "../SimpleIni.h"
 #include <iostream>
 #include <filesystem>
 #include <fstream>
@@ -17,11 +17,11 @@ std::string getLoadedCharacter() {
 	CSimpleIniA ini;
   ini.LoadFile(iniPath.c_str());
   
-  SI_Error rc = ini.LoadFile(configPath.c_str());
+  SI_Error rc = ini.LoadFile(iniPath.c_str());
 	if (rc < 0) {
 		std::cerr << "Failed to load oblivion.ini" << std::endl;
 		return "Failed";
 	}
 
-	return savePath + "/" ini.GetValue("General", "SLocalSavePath");
+	return savePath + "/" + ini.GetValue("General", "SLocalSavePath");
 }

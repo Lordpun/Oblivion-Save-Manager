@@ -1,6 +1,6 @@
 #include "config.h"
 #include "findPaths.h"
-#include "SimpleIni.h"
+#include "../SimpleIni.h"
 #include <iostream>
 #include <filesystem>
 #include <fstream>

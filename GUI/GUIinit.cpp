@@ -1,5 +1,5 @@
 #include "GUIinit.h"
-#include "backend/config.h"
+#include "backend/config/config.h"
 #include <iostream>
 
 // Styling

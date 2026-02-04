@@ -6,6 +6,6 @@
 
 int makeConfig(Gtk::Window& parent);
 
-std::string getPath();
+std::string getPath(std::string name);
 
 #endif
